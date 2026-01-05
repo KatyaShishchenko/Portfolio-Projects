@@ -20,7 +20,7 @@ Key Data Insights from EDA (Exploratory Data Analysis)
 Exploratory analysis revealed several important patterns in the data:
 - Usage frequency strongly correlates with retention: 40% of users with zero app usage in the last month churned, while no users who used the app all 30 days churned.
 - Distance per driving day correlates with churn: Users who drove farther on each driving day were more likely to churn.
-Tenure was evenly distributed: Users ranged from brand new to approximately 10 years, with relatively even representation across tenure groups.
+- Tenure was evenly distributed: Users ranged from brand new to approximately 10 years, with relatively even representation across tenure groups.
 - Data quality issues identified: Several variables contained highly improbable or impossible outlying values, including driven_km_drives, activity_days, and driving_days.
 - No significant device difference: A two-sample t-test found no statistically significant difference in the mean number of drives between iPhone and Android users.
 
@@ -28,15 +28,14 @@ Modeling and Evaluation
 
 The project employed a phased modeling approach, progressing from statistical analysis to machine learning:
 
-Logistic Regression
+Logistic Regression: 
 A binomial logistic regression model was built as the baseline predictive model. Feature engineering and multicollinearity assessment were performed prior to model training.
-- Results:
 - Precision: 53%
 - Recall: 9%
 Most important feature: activity_days (negative correlation with churn)
 The low recall indicates the model failed to identify most churned users, producing many false negatives.
 
-Tree-Based Models
+Tree-Based Models: 
 To improve predictive performance, two ensemble models were developed and cross-compared: Random Forest and XGBoost. The data was split into training, validation, and test sets to enable robust model selection and unbiased performance estimation.
 
 Feature Engineering 

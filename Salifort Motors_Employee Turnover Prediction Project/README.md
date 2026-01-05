@@ -8,9 +8,12 @@ The goal of this project was to develop a machine learning model to predict empl
 
 Business Understanding
 
-Employee turnover is costly—recruiting, hiring, and training new employees requires significant time and resources. For a global company like Salifort Motors, understanding why employees leave enables proactive intervention before valuable talent departs.
-This project aimed to answer a critical business question: What factors are most likely to make an employee leave the company?
-The value of an accurate predictive model extends beyond identification of at-risk employees. By understanding the key drivers of turnover, HR leadership can implement targeted policy changes to address systemic issues, ultimately improving retention, employee satisfaction, and organizational performance.
+Employee turnover is costly-recruiting, hiring, and training new employees requires significant time and resources. For a global company like Salifort Motors, understanding why employees leave enables proactive intervention before valuable talent departs.
+
+This project aimed to answer a critical business question: 
+- What factors are most likely to make an employee leave the company?
+
+The value of an accurate predictive model extends beyond the identification of at-risk employees. By understanding the key drivers of turnover, HR leadership can implement targeted policy changes to address systemic issues, ultimately improving retention, employee satisfaction, and organizational performance.
 
 
 Feature Engineering
@@ -48,13 +51,13 @@ Feature Importance
 
 The models identified the following variables as most predictive of employee turnover:
 
-Decision Tree — Top Features:
+Decision Tree - Top Features:
 - number_project
 - last_evaluation
 - tenure
 - overworked
 
-Random Forest — Top Features:
+Random Forest - Top Features:
 - last_evaluation
 - number_project
 - tenure
@@ -68,10 +71,6 @@ Both models consistently identified performance evaluation scores, project workl
 Conclusion
 
 This model enables HR to predict which employees are at risk of leaving and, more importantly, understand why they leave. The analysis revealed several actionable patterns:
-
-
-Key Findings
-
 - Evaluation scores matter: last_evaluation was the top predictor in the Random Forest model, suggesting a complex relationship between performance reviews and turnover
 - Project overload drives attrition: High numbers of projects correlate with employee departure
 - The 4-year tenure cliff: Employees at approximately 4 years tenure show elevated turnover risk
